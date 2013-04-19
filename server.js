@@ -26,7 +26,7 @@ sockjs_chat.on('connection', function(conn) {
 });
 
 // Express server
-var app = express(); /* express.createServer will not work here */
+var app = express();
 var server = http.createServer(app);
 
 sockjs_chat.installHandlers(server, {prefix:'/chat'});
